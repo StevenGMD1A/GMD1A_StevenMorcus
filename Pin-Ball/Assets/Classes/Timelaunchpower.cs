@@ -11,6 +11,7 @@ public class Timelaunchpower : MonoBehaviour
     public bool readytolaunch;
 
     // Update is called once per frame
+    //script i made easily my counter starts reaches a max of 3 seconds and that times the force for a nice boost of power on hold.
     void Update()
     {
         if (readytolaunch == true

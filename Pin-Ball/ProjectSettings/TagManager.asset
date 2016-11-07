@@ -11,6 +11,9 @@ TagManager:
   - speler
   - ball
   - bumper
+  - 1
+  - 2
+  - 3
   layers:
   - Default
   - TransparentFX

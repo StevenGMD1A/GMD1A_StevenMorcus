@@ -20,6 +20,7 @@ public class FlipperMoveRight : MonoBehaviour
     public int force;
     void Update()
     {
+        //Not perfectly working flippermove script wishing for more explaination about this.
         if (Input.GetKeyDown(KeyCode.RightShift) && flipactivated == false)
         {
             activeFlipper = true;

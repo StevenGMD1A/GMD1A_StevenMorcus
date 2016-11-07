@@ -12,6 +12,7 @@ public class Force : MonoBehaviour
     public bool spd = false;
 
     public void Update()
+        //my script for the bounce effect on the bumpers with a speedboost.
     {
         
 
@@ -38,16 +39,19 @@ public class Force : MonoBehaviour
         if (collision.collider.tag == "sb")
         {
             spd = true;
+            score.scoreh = score.scoreh + 10;
 
         }
         if (collision.collider.tag == "lol")
         {
             gaatlos = 0;
+            score.scoreh = score.scoreh + 10;
         }
 
         if (collision.collider.tag == "lal")
         {
-            gaatlos = gaatlos + 50;
+            gaatlos = gaatlos + 100;
+            score.scoreh = score.scoreh + 25;
 
         }
             direction = collision.contacts[0].point;
